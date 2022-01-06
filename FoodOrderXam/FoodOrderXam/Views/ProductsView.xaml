@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FoodOrderXam.Views.ProductsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:helpers="clr-namespace:DemoApp.Helpers"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:vm="clr-namespace:FoodOrderXam.ViewModels;assembly=FoodOrderXam"
+    ios:Page.UseSafeArea="True"
+    mc:Ignorable="d">
+    <ContentPage.BindingContext>
+        <vm:ProductsViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid Margin="20,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <d:RowDefinition Height="Auto" />
+                    <d:RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Welcome"
+                    TextColor="Silver" />
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    Text="{Binding UserName}" />
+                <ImageButton
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    Margin="0,0,10,0"
+                    HorizontalOptions="End"
+                    Source="{FontImage FontFamily=FontAwesome,
+                                       Glyph={x:Static helpers:IconFont.ViewList},
+                                       Size=40,
+                                       Color=Purple}" />
+                <Label
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="2"
+                    FontSize="Subtitle"
+                    HorizontalOptions="End"
+                    Text="{Binding UserCartItemCount}"
+                    VerticalTextAlignment="Start" />
+                <ImageButton
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="2"
+                    Margin="0,0,10,0"
+                    Command="{Binding ViewCartCommand}"
+                    HorizontalOptions="End"
+                    Source="{FontImage FontFamily=FontAwesome,
+                                       Glyph={x:Static helpers:IconFont.Shopping},
+                                       Size=40,
+                                       Color=Green}" />
+                <ImageButton
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="3"
+                    Margin="0,0,10,0"
+                    Command="{Binding LogoutCommand}"
+                    HorizontalOptions="End"
+                    Source="{FontImage FontFamily=FontAwesome,
+                                       Glyph={x:Static helpers:IconFont.Logout},
+                                       Size=40,
+                                       Color=Red}" />
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <SearchBar
+                    Grid.Column="0"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Fill"
+                    Placeholder="Search Food" />
+                <ImageButton
+                    Grid.Column="1"
+                    Margin="0,0,10,0"
+                    HorizontalOptions="End"
+                    Source="{FontImage FontFamily=FontAwesome,
+                                       Glyph={x:Static helpers:IconFont.SearchWeb},
+                                       Size=40,
+                                       Color=Red}" />
+            </Grid>
+
+            <CollectionView
+                Grid.Row="2"
+                Margin="0,20"
+                HeightRequest="125"
+                HorizontalScrollBarVisibility="Never"
+                ItemsLayout="HorizontalList"
+                ItemsSource="{Binding Categories}"
+                SelectionChanged="CollectionView_SelectionChanged"
+                SelectionMode="Single"
+                VerticalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="0,0,15,0">
+                            <Frame
+                                BackgroundColor="#feeee8"
+                                CornerRadius="10"
+                                HasShadow="True"
+                                HeightRequest="50">
+                                <Image Source="{Binding ImageUrl}" />
+                            </Frame>
+                            <Label HorizontalTextAlignment="Center" Text="{Binding CategoryName}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label
+                Grid.Row="3"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Latest Items" />
+
+            <CollectionView
+                Grid.Row="4"
+                Margin="0,20,10,0"
+                ItemsSource="{Binding LatestItems}"
+                VerticalOptions="Start"
+                VerticalScrollBarVisibility="Never">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="0,15">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <pancake:PancakeView
+                                    Grid.Row="0"
+                                    Margin="0,0,10,0"
+                                    CornerRadius="20">
+                                    <Image
+                                        Aspect="Fill"
+                                        HeightRequest="220"
+                                        Source="{Binding ImageUrl}" />
+                                </pancake:PancakeView>
+                                <Frame
+                                    Grid.Row="1"
+                                    Margin="20,-80,20,70"
+                                    BackgroundColor="White"
+                                    CornerRadius="10"
+                                    HorizontalOptions="End">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontSize="Medium"
+                                        HeightRequest="25"
+                                        Text="{Binding Price, StringFormat='{0:c}'}"
+                                        TextColor="Black" />
+                                </Frame>
+                                <Label
+                                    Grid.Row="1"
+                                    FontAttributes="Bold"
+                                    FontSize="22"
+                                    Text="{Binding Name}"
+                                    VerticalTextAlignment="Center" />
+                                <Image
+                                    Grid.Row="2"
+                                    HorizontalOptions="Start"
+                                    Source="Star"
+                                    WidthRequest="20" />
+                                <Label
+                                    Grid.Row="2"
+                                    Margin="30,0,0,0"
+                                    FontSize="15"
+                                    VerticalOptions="Center">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span FontAttributes="Bold" Text="{Binding Rating}" />
+                                            <Span Text="{Binding Description}" TextColor="#a4a7b6" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Grid>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
