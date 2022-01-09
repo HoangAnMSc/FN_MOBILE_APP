@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "UHzXkTAvPpRLM9ZE+bcSRV4oju7COuVR0MHYR0X08VVdhzv4EUfJ4EKLzBoIqtnoylzrUqQlLZH74VSHccjIig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\18520\\.nuget\\packages\\sharpnado.shadows\\1.0.2\\sharpnado.shadows.1.0.2.nupkg.sha512",
+    "C:\\Users\\18520\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\18520\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\18520\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\18520\\.nuget\\packages\\xamarin.forms\\4.7.0.968\\xamarin.forms.4.7.0.968.nupkg.sha512",
+    "C:\\Users\\18520\\.nuget\\packages\\xamarin.forms.pancakeview\\1.4.2\\xamarin.forms.pancakeview.1.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

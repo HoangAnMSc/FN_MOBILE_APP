@@ -1,0 +1,17 @@
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.csproj.AssemblyReference.cache
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\Views\DetailPage.xaml.g.cs
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\Views\HomeViews.xaml.g.cs
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.AssemblyInfoInputs.cache
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.AssemblyInfo.cs
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.csproj.CoreCompileInputs.cache
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.dll
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\ref\XFDelivery.dll
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XFDelivery.pdb
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\bin\Debug\netstandard2.0\XFDelivery.deps.json
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\bin\Debug\netstandard2.0\XFDelivery.dll
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\bin\Debug\netstandard2.0\ref\XFDelivery.dll
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\bin\Debug\netstandard2.0\XFDelivery.pdb
+C:\Users\18520\OneDrive\Desktop\DA_UngDungDiDong\XFDelivery\XFDelivery\obj\Debug\netstandard2.0\XamlC.stamp

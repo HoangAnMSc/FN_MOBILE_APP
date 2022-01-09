@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFDelivery.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid RowDefinitions="*, 2*, Auto">
+        
+        <Grid>
+            <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z"
+                  Aspect="Fill" Fill="#E1F7F5"/>
+        </Grid>
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-140,0,0" Spacing="30">
+            <Grid HeightRequest="210" WidthRequest="210" HorizontalOptions="Center">
+                <Ellipse Stroke="White" StrokeThickness="2" Aspect="Fill"/>
+                <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </Grid>
+            <StackLayout HorizontalOptions="Center" Spacing="15">
+                <Label Text="Ở ĐÂU CÓ BỤNG ĐÓI, Ở ĐÓ CÓ TÔI!" TextColor="Black" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Enter your phone number to continue" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
+                <Button x:Name="btnGuest" Text="Guest" TextColor="White" BackgroundColor="#FFBE00" WidthRequest="150" HeightRequest="46" 
+                    CornerRadius="23" HorizontalOptions="Center" Clicked="btnGuest_Clicked"/>
+                <Button x:Name="btnAdmin" Text="Admin" TextColor="White" BackgroundColor="#FF6600" WidthRequest="150" HeightRequest="46" 
+                    CornerRadius="23" HorizontalOptions="Center" Clicked="btnAdmin_Clicked"/>
+                <Button x:Name="loginBtn" Text="Login" TextColor="White" BackgroundColor="#00000f" WidthRequest="150" HeightRequest="46" 
+                    CornerRadius="23" HorizontalOptions="Center" Clicked="loginBtn_Clicked"/>
+                <Picker x:Name="pickUserType" Grid.Row="1" Grid.Column="1" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
