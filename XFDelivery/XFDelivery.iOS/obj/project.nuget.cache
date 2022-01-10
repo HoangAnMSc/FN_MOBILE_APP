@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UHzXkTAvPpRLM9ZE+bcSRV4oju7COuVR0MHYR0X08VVdhzv4EUfJ4EKLzBoIqtnoylzrUqQlLZH74VSHccjIig==",
+  "dgSpecHash": "r/WcZxSyQVRjWugYIB7ZAkTH0MenfPIOx5AaCMKxuc40/MNpmgZIy0YUlQJLJkAoT8Y4UVRe5jLpjTU0F1iChg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
+  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\18520\\.nuget\\packages\\sharpnado.shadows\\1.0.2\\sharpnado.shadows.1.0.2.nupkg.sha512",
     "C:\\Users\\18520\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",

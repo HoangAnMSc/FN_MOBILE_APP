@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj": {}
+    "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj": {
+    "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
+        "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
         "projectName": "XFDelivery.Android",
-        "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
+        "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
         "packagesPath": "C:\\Users\\18520\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\obj\\",
+        "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
-                "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj"
+              "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
+                "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
+    "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
+        "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
         "projectName": "XFDelivery",
-        "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
+        "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
         "packagesPath": "C:\\Users\\18520\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\obj\\",
+        "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

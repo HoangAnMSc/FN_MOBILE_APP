@@ -1339,11 +1339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
       "projectName": "XFDelivery.iOS",
-      "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
+      "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.iOS\\XFDelivery.iOS.csproj",
       "packagesPath": "C:\\Users\\18520\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.iOS\\obj\\",
+      "outputPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1364,8 +1364,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
-              "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj"
+            "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj": {
+              "projectPath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj"
             }
           }
         }

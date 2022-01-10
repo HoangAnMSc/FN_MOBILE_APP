@@ -24,7 +24,7 @@ namespace XFDelivery.Views
 
         private void loginBtn_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new HomeViews());
+            Navigation.PushAsync(new HomeViewPage());
         }
     }
 }

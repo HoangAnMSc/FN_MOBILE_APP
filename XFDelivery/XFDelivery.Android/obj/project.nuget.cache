@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hfc+u0CETWpe64da4nM+pdEaDbW0dW45Lvwg/javHiWJnedPaznhTdLHRXrXZ7pvb19L6HG+U1bGXno0koC8iw==",
+  "dgSpecHash": "5FVwmJNey/N+CGOkeqYHnmn94m/MoG6BiTtqA/L2tcu4dN9AEvrYt3B/Wsn27tiwGrCon2ITaayeaYi9Hdj2lw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
+  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery.Android\\XFDelivery.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\18520\\.nuget\\packages\\sharpnado.shadows\\1.0.2\\sharpnado.shadows.1.0.2.nupkg.sha512",
     "C:\\Users\\18520\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",

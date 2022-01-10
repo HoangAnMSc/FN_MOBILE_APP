@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U7ZsEDgxAs+Cq4xuu9Q5zvLlVf3A+fpwfzlrKqDE8x+XvRVy2MotK1Vxh1+Ptz0TX/Nk0g1P0UmY2x41qyfOCw==",
+  "dgSpecHash": "XMc0NyJL9sLd4ZFfZt/+lY1AmVWSnNEMSwl5hAaELGLXtOUCODBASqNEwB0stIwiw85blukT4G6nIigdX1eCRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\DA_UngDungDiDong\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
+  "projectFilePath": "C:\\Users\\18520\\OneDrive\\Desktop\\FN_MOBILE_APP\\XFDelivery\\XFDelivery\\XFDelivery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\18520\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\18520\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
