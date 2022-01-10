@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.BookDetailPage"
+             Title="Details Page">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#363636">
+            <Grid Margin="10" BackgroundColor="#4ED3CF">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="bookImg" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"/>
+
+                <Label x:Name="bookTitle" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black"
+                       FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                <Label x:Name="bookPrice" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black"
+                       FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                <Button Text="Update" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" 
+                        x:Name="editBtn" BackgroundColor="#C6E2FF" TextColor="#FF3300" Clicked="editBtn_Clicked"/>
+                <Button Text="Delete" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" 
+                        x:Name="delBtn" BackgroundColor="#FF3300" TextColor="White" Clicked="delBtn_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

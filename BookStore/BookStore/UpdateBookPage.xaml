@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.UpdateBookPage" Title="Update Page">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#4ED3CF">
+                <StackLayout Orientation="Horizontal" Margin="25" Spacing="20" VerticalOptions="Start"  HorizontalOptions="Center">
+                    <Label Text="ALL FOOD IN DATABASE"  TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" />
+                </StackLayout>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Book Name: " FontSize="Large" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="bookTitle" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Placeholder="Tên đồ ăn mới .."/>
+
+                <Label Text="Path Image: " FontSize="Large" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="bookImg" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Placeholder="Path mới .."/>
+
+                <Label Text="Price: " FontSize="Large" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="bookPrice" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Keyboard="Numeric" Placeholder="Giá tiền mới .."/>
+
+                <Button Text="Update" x:Name="updateBookBtn" Clicked="updateBookBtn_Clicked" 
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                        VerticalOptions="Center" HorizontalOptions="Center"
+                        BackgroundColor="#4ED3CF" TextColor="Black"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

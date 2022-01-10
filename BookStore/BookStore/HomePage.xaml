@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.HomePage"
+             Title="Home Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="cartBtn" Text="Cart" Clicked="cartBtn_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid ColumnDefinitions="auto, auto, auto" RowDefinitions="auto, auto, auto, auto, auto, auto">
+                    <Grid Grid.Row="0" Grid.ColumnSpan="3">
+                        <Image Source="gps.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Start" VerticalOptions="Start"/>
+                        <Label Margin="60,18,0,0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span   FontAttributes="Bold"
+                                            TextColor="#104E8B"
+                                            FontSize="18"
+                                            Text="TP. Thủ Đức, HCM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Image Source="menu.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="End" VerticalOptions="Start" Margin="20"/>
+                    </Grid>
+                    <Frame HasShadow="True" IsClippedToBounds="True" Margin="20,0,20,0" HeightRequest="40" CornerRadius="30" Padding="0"
+                           Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                        <SearchBar Placeholder="Search items..." />
+                    </Frame>
+                    <Label
+                            Grid.Row="2"
+                            Grid.ColumnSpan="3"
+                            FontSize="20"
+                            Margin="20,10,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="FillAndExpand"
+                            HorizontalTextAlignment="Start"
+                            TextColor="#104E8B"
+                            Text="Loại thực phẩm bạn chọn"
+                            VerticalOptions="EndAndExpand" />
+                    <ImageButton    x:Name="Rice"
+                                    Grid.Row="3"
+                                    Grid.Column="0"
+                                    Margin="30,0"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="Rice_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="com.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                    <ImageButton    x:Name="BunPho"
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="BunPho_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="pho.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                    <ImageButton    x:Name="DoUong"
+                                    Grid.Row="4"
+                                    Grid.Column="0"
+                                    Margin="30,0"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="DoUong_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="douong.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                    <ImageButton    x:Name="AnVat"
+                                    Grid.Row="4"
+                                    Grid.Column="1"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="AnVat_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="anvat.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                    <ImageButton    x:Name="DoAnNhanh"
+                                    Grid.Row="5"
+                                    Grid.Column="0"
+                                    Margin="30,0"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="DoAnNhanh_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="doannhanh.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                    <ImageButton    x:Name="Healthy"
+                                    Grid.Row="5"
+                                    Grid.Column="1"
+                                    CornerRadius="15"
+                                    HeightRequest="180"
+                                    WidthRequest="150"
+                                    Aspect="AspectFit"
+                                    Clicked="Healthy_Clicked"
+                                    HorizontalOptions="Start"
+                                    Source="heathy.png"
+                                    BorderWidth="1"
+                                    BorderColor="#C6E2FF"
+                                    VerticalOptions="Start" />
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

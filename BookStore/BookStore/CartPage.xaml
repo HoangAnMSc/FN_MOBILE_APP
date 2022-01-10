@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.CartPage"
+             Title="Cart">
+
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid BackgroundColor="#4ED3CF" RowDefinitions="*, 2*, Auto">
+                <StackLayout>
+                    <ImageButton x:Name="gohomeBtn" Source="home.png" VerticalOptions="Start"
+                        HorizontalOptions="StartAndExpand" WidthRequest="50" HeightRequest="50" BorderColor="Black" BorderWidth="3" CornerRadius="10" Clicked="gohomeBtn_Clicked"/>
+
+                    <StackLayout Orientation="Horizontal" Spacing="20" VerticalOptions="Start"  HorizontalOptions="Center">
+                        <Label Text="YOUR FOOD" TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <ListView x:Name="lstCart" ItemSelected="lstCart_ItemSelected" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid BackgroundColor="#CDC9C9" Margin="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="3*"/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image x:Name="bookImg" Source="{Binding img}"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="9" />
+
+                                <Label x:Name="bookTitle" Text="{Binding title}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5" 
+                                    TextColor="Black" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                                <Label x:Name="bookPrice" Text="{Binding price}"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5"
+                                    FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label x:Name="amount" FontSize="Large" FontAttributes="Bold" BackgroundColor="LawnGreen" TextColor="Red" HorizontalTextAlignment="End"/>
+
+            <Button x:Name="thanhtoan" Text="                     THANH TOÁN                      " 
+                    FontSize="Large" FontAttributes="Bold" BackgroundColor="Blue" TextColor="Yellow" 
+                    HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Clicked="thanhtoan_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

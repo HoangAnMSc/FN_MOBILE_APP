@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.AdminPage"
+             Title="Admin Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addBtn" Text="ADD NEW BOOK +" Clicked="addBtn_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="*, 2*, Auto">
+        <BoxView Grid.RowSpan="3">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Color="#161616" Offset="0"/>
+                        <GradientStop Color="#30343F" Offset="1"/>
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <Grid BackgroundColor="#4ED3CF">
+            <StackLayout>
+                <ImageButton x:Name="logoutBtn" Source="logout.png" VerticalOptions="Start"
+                        HorizontalOptions="StartAndExpand" WidthRequest="50" HeightRequest="50" BorderColor="Black" BorderWidth="3" CornerRadius="10" Clicked="logoutBtn_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,150,0,0" Spacing="20" VerticalOptions="Start"  HorizontalOptions="Center">
+                <Label Text="ALL FOOD IN DATABASE"  TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" />
+            </StackLayout>
+        </Grid>
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="30" >
+            <StackLayout HorizontalOptions="Center" Spacing="15" >
+                <ListView x:Name="avaiBooks" ItemSelected="avaiBooks_ItemSelected" HasUnevenRows="True" BackgroundColor="White" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding title}" ImageSource="{Binding img}" Detail="{Binding price}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

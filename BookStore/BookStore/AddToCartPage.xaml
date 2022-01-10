@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.AddToCartPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="10" BackgroundColor="#4ED3CF">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="bookImg" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"/>
+
+                <Label x:Name="bookTitle" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black"
+                       FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                <Label x:Name="bookPrice" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black"
+                       FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                
+                <Button Text="Add to Cart" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center" 
+                        x:Name="addToCartBtn" BackgroundColor="Black" TextColor="White" Clicked="addToCartBtn_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

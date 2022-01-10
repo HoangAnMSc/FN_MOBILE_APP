@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStore.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="*, 2*, Auto" BackgroundColor="# F0FFFF">
+
+        <Grid>
+            <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z"
+                  Aspect="Fill" Fill="#4ED3CF"/>
+        </Grid>
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-140,0,0" Spacing="30">
+            <Grid HeightRequest="210" WidthRequest="210" HorizontalOptions="Center">
+                <Ellipse Stroke="White" StrokeThickness="2" Aspect="Fill"/>
+                <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </Grid>
+            <StackLayout HorizontalOptions="Center" Spacing="15">
+                <Label Text="Ở ĐÂU CÓ BỤNG ĐÓI, Ở ĐÓ CÓ TÔI!" TextColor="Black" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Enter your phone number to continue" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
+                <Grid RowDefinitions="*" ColumnDefinitions="*,4*">
+                    <Label Text="+84 || " Grid.Row="0" Grid.Column="0" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="20,5,0,0"/>
+                    <Entry x:Name="uPhone" Placeholder=" Phone Number .." Grid.Row="0" Grid.Column="1"  VerticalOptions="Center" Keyboard="Numeric" Margin="0,0,20,0"/>
+                </Grid>
+                <Button x:Name="loginBtn" Text="Login" TextColor="White" BackgroundColor="#00000f" WidthRequest="150" HeightRequest="46" 
+                    CornerRadius="23" HorizontalOptions="Center" Clicked="loginBtn_Clicked"/>
+                <Button
+                    x:Name="FaceButton1"
+                    TranslationY="50"
+                    HeightRequest="50"
+                    CornerRadius="30"
+                    BackgroundColor="#009ACD"
+                    Text="Continues With FaceBook"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"/>
+                <Button
+                    x:Name="FaceButton2"
+                    TranslationY="50"
+                    HeightRequest="50"
+                    CornerRadius="30"
+                    BackgroundColor="#00BFFF"
+                    Text="Continues With Google"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    />
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
