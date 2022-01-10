@@ -22,7 +22,10 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
-                        <Image Source="menu.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="End" VerticalOptions="Start" Margin="20"/>
+                        <StackLayout>
+                            <ImageButton x:Name="logoutBtn" Source="logout.png" VerticalOptions="Start"
+                        HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50" BorderColor="Black" BorderWidth="3" CornerRadius="10" Clicked="logoutBtn_Clicked"/>
+                        </StackLayout>
                     </Grid>
                     <Frame HasShadow="True" IsClippedToBounds="True" Margin="20,0,20,0" HeightRequest="40" CornerRadius="30" Padding="0"
                            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">

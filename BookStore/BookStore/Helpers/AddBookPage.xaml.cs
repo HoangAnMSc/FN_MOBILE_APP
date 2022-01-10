@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace BookStore
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

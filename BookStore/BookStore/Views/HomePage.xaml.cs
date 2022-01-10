@@ -53,5 +53,14 @@ namespace BookStore
         {
             Navigation.PushAsync(new GuestPage());
         }
+
+        private async void logoutBtn_Clicked(object sender, EventArgs e)
+        {
+            var hoi = await DisplayAlert("Thông Báo", " Bạn muốn đăng xuất?", "Yes", "No");
+            if (hoi)
+            {
+                await Navigation.PushAsync(new MainPage());
+            }
+        }
     }
 }

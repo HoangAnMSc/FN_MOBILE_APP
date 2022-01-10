@@ -36,11 +36,6 @@ namespace BookStore
             Navigation.PushAsync(new AddToCartPage(selectedBook));
         }
 
-        private void gohomeBtn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new HomePage());
-        }
-
         private async void logoutBtn_Clicked(object sender, EventArgs e)
         {
             var hoi = await DisplayAlert("Thông Báo", " Bạn muốn đăng xuất?", "Yes", "No");
@@ -49,6 +44,11 @@ namespace BookStore
                 await Navigation.PushAsync(new MainPage());
             }
             
+        }
+
+        private void gohomeBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HomePage());
         }
     }
 }

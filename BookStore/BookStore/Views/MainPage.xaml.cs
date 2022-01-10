@@ -35,7 +35,7 @@ namespace BookStore
             }
             else
             {
-                if (user.Phone == "")
+                if (user.Phone == null)
                 {
                     DisplayAlert("Thông Báo", "Bạn chưa nhập số điện thoại ", "OK");
                 }
